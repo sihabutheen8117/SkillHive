@@ -1,0 +1,35 @@
+{
+  "course": [
+    {
+      "title": "Introduction to BigData",
+      "createdAt": "10-12-24",
+      "instructorId": 123,
+      "courseId": 542,
+      "assessment": {
+        "questions": [
+          {
+            "question": "Which of the following characteristics is most commonly associated with Big Data?",
+            "choices": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "answer": "c"
+          }
+        ]
+      },
+      "id": "8cd5"
+    },
+    {
+      "title": "DevOps for Beginners",
+      "createdAt": "12-12-24",
+      "instructorId": 123,
+      "courseId": 543,
+      "assessment": {
+        "questions": []
+      },
+      "id": "1099"
+    }
+  ]
+}
