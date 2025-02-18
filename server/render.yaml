@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: json-server
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npx json-server --watch db.json
+    rootDir: server
+    envVars:
+      - key: NODE_VERSION
+        value: 18
