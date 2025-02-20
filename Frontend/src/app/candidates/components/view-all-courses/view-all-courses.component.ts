@@ -32,8 +32,8 @@ instructor: any;
 
   ngOnInit() {
     const candidateEmail = this.candidateService.getUserEmail();
-    const coursesUrl = 'http://localhost:3000/courses';
-    const feedbackUrl = 'http://localhost:3000/feedbacks';
+    const coursesUrl = 'https://skillhive-backend.onrender.com/courses';
+    const feedbackUrl = 'https://skillhive-backend.onrender.com/feedbacks';
   
     // Fetch courses first
     this.http.get<any[]>(coursesUrl).subscribe((courses) => {

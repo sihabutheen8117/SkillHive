@@ -14,7 +14,7 @@ import { CandidateService } from '../../services/candidate.service';
 
 })
 export class TrackMyLearningComponent implements OnInit {
-  private apiUrl = 'http://localhost:3000/courses';
+  private apiUrl = 'https://skillhive-backend.onrender.com/courses';
   totalEnrolledCourses: number;
   completedCourses: number;
   hoursSpent: number;

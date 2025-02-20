@@ -28,7 +28,7 @@ export class CandidateComponent implements OnInit{
       return;
     }
 
-    this.http.get<any[]>(`http://localhost:3000/additionalDetails_Candidates`).subscribe({
+    this.http.get<any[]>(`https://skillhive-backend.onrender.com/additionalDetails_Candidates`).subscribe({
       next: (users) => {
         const userExists = users.some(user => user.id === userId);
         if (!userExists) {

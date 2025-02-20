@@ -18,7 +18,7 @@ export class AuthService {
     name: null,
   };
 
-  private baseUrl = 'http://localhost:3000';
+  private baseUrl = 'https://skillhive-backend.onrender.com';
 
   constructor(
     private http: HttpClient,

@@ -9,10 +9,10 @@ import { animateChild } from '@angular/animations';
   providedIn: 'root'
 })
 export class CourseService {
-
-  private apiUrl = 'http://localhost:3000/courses';
-  private apiUrlCandidate = 'http://localhost:3000/additionalDetails_Candidates';
-  private apiUrlInstructor = "http://localhost:3000/instructorDetails";
+  
+  private apiUrl = 'https://skillhive-backend.onrender.com'+'/courses';
+  private apiUrlCandidate = 'https://skillhive-backend.onrender.com'+'/additionalDetails_Candidates';
+  private apiUrlInstructor = 'https://skillhive-backend.onrender.com'+"/instructorDetails";
   constructor(private http: HttpClient) { }
 
   course : any[] = []

@@ -12,8 +12,8 @@ export class InstructorService {
   private http = inject(HttpClient);
   private authService = inject(AuthService);
 
-  private apiurl = 'http://localhost:3000/applicantDetails'; // API URL for applicants
-  private shortlistedUrl = 'http://localhost:3000/instructorDetails'; // API URL for shortlisted instructors
+  private apiurl = 'https://skillhive-backend.onrender.com/applicantDetails'; // API URL for applicants
+  private shortlistedUrl = 'https://skillhive-backend.onrender.com/instructorDetails'; // API URL for shortlisted instructors
 
   // Post applicant in database
   submitInstructorData(formData: any): Observable<any> {
@@ -27,7 +27,7 @@ export class InstructorService {
 
   //get instructor details through email
   getInstructorByEmail(email: string): Observable<any> {
-    return this.http.get<any>(`http://localhost:3000/instructorDetails?email=${email}`);
+    return this.http.get<any>(`https://skillhive-backend.onrender.com/instructorDetails?email=${email}`);
   }
 
   // Delete the instructor

@@ -42,8 +42,8 @@ export class ForgotpasswordComponent implements OnInit {
   isSubmitting: boolean = false;
   cannotSubmit: boolean = false;
   timer: boolean = false;
-  private baseUrl = 'http://localhost:3000';
-  private emailUrl = 'http://localhost:4000/send-email';
+  private baseUrl = 'https://skillhive-backend.onrender.com';
+  private emailUrl = 'https://skillhive-forgot-password.onrender.com/send-email';
   hidePassword = signal(true);
   hideConfirmPassword = signal(true);
   private StrongPasswordRegx: RegExp =

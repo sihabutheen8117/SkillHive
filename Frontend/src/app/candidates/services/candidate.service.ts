@@ -9,8 +9,8 @@ import { AdditionalDetails } from '../models/candidate.model';
   providedIn: 'root',
 })
 export class CandidateService {
-  private candidatesUrl = 'http://localhost:3000/users';
-  private additionalDetailsUrl = 'http://localhost:3000/additionalDetails_Candidates';
+  private candidatesUrl = 'https://skillhive-backend.onrender.com'+'/users';
+  private additionalDetailsUrl = 'https://skillhive-backend.onrender.com'+'/additionalDetails_Candidates';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -27,8 +27,8 @@ export class AdminViewAllCoursesComponent implements OnInit {
   constructor(private courseService: CourseService, private router: Router, private http: HttpClient) {}
 
   ngOnInit() {
-    const coursesUrl = 'http://localhost:3000/courses';
-    const feedbackUrl = 'http://localhost:3000/feedbacks';
+    const coursesUrl = 'https://skillhive-backend.onrender.com/courses';
+    const feedbackUrl = 'https://skillhive-backend.onrender.com/feedbacks';
 
     this.http.get<any[]>(coursesUrl).subscribe((courses) => {
       this.courses = courses;

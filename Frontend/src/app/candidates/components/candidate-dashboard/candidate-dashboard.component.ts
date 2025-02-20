@@ -22,7 +22,7 @@ export class CandidateDashboardComponent implements OnInit {
   candidateName: string | null = '';
   activeTab: string = 'enrollCourse';
   userProfile: any;
-  private apiUrl = 'http://localhost:3000/courses';
+  private apiUrl = 'https://skillhive-backend.onrender.com/courses';
   enrolledCourses : any =[];
 
   candidateEmail;
