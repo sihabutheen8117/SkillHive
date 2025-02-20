@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap'); */
 .certificate-container {
     max-width: 1000px;
     margin: 50px auto;
@@ -141,7 +141,7 @@
     background-color: #e03b1e;
   }
 .signature-name {
-  font-family: 'Dancing Script', cursive;
+  font-family: cursive;
   font-size: 32px; 
   font-weight: 500;
 }
