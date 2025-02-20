@@ -27,7 +27,7 @@ export class ListOfApplicantsComponent implements OnInit {
   }
 
   fetchInstructors() {
-    this.http.get('http://localhost:3000/instructorDetails').subscribe({
+    this.http.get('https://skillhive-backend.onrender.com/instructorDetails').subscribe({
       next: (data: any) => {
         this.instructors = data;
         this.filteredInstructors = [...this.instructors];

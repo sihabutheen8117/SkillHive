@@ -24,7 +24,7 @@ export class CertificateComponent implements OnInit {
     this.courseId = this.route.snapshot.paramMap.get('courseId') || '';
 
     // Fetch logged-in user details
-    this.http.get<any[]>('http://localhost:3000/users').subscribe(users => {
+    this.http.get<any[]>('https://skillhive-backend.onrender.com/users').subscribe(users => {
       const user = users.find(u => u.email === this.loggedInUserEmail);
       if (user) {
         this.fullName = user.fullName;
@@ -34,7 +34,7 @@ export class CertificateComponent implements OnInit {
     });
 
     // Fetch course details
-    this.http.get<any[]>('http://localhost:3000/courses').subscribe(courses => {
+    this.http.get<any[]>('https://skillhive-backend.onrender.com/courses').subscribe(courses => {
       const course = courses.find(c => c.id === this.courseId);
       if (course) {
         this.courseName = course.name;

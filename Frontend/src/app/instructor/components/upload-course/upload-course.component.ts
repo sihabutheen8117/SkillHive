@@ -80,7 +80,7 @@ for(let i=0;i<this.files.length;i++){
 
 
 storeFileInDB(fileUrl: string) {
-  this.http.get<any>(`http://localhost:3000/courses/${this.courseId}`).subscribe({
+  this.http.get<any>(`https://skillhive-backend.onrender.com/courses/${this.courseId}`).subscribe({
     next: (course) => {
       console.log("chosed course", course);
       const newModule = {
@@ -96,7 +96,7 @@ storeFileInDB(fileUrl: string) {
       }
       course.modules.push(newModule);
 
-      this.http.patch(`http://localhost:3000/courses/${this.courseId}`, { modules: course.modules }).subscribe({
+      this.http.patch(`https://skillhive-backend.onrender.com/courses/${this.courseId}`, { modules: course.modules }).subscribe({
         next: () => {console.log('Module added to Mock JSON Server')
           this.routes.navigate(['/manage-course', this.courseId]);
         }

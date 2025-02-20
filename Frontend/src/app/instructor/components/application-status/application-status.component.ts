@@ -24,7 +24,7 @@ export class ApplicationStatusComponent {
   };
   isAdmin: boolean = false;
   instructorId: string | null = null;
-  private baseUrl = 'http://localhost:3000'; // Update with your API URL
+  private baseUrl = 'https://skillhive-backend.onrender.com'; // Update with your API URL
 
   constructor(private route: ActivatedRoute, private http: HttpClient) { }
 

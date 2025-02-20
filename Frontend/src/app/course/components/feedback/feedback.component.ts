@@ -48,7 +48,7 @@ export class FeedbackComponent implements OnInit {
       suggestions: this.suggestions,
     };
 
-    this.http.post('http://localhost:3000/feedbacks', feedback).subscribe(() => {
+    this.http.post('https://skillhive-backend.onrender.com/feedbacks', feedback).subscribe(() => {
       alert('Feedback submitted successfully!');
       // this.certificateGenerated = true; // Show the certificate link after feedback submission
       window.history.back();

@@ -26,7 +26,7 @@ export class HeaderComponent {
   opened: boolean = false
   openSearch: boolean = false;
   searchFound: boolean = false;
-  baseUrl = 'http://localhost:3000';
+  baseUrl = 'https://skillhive-backend.onrender.com';
   sideMenuOptions;
   adminMenuOptions = [{
     option: "Home",
