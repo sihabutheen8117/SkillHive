@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration=production",
-    "postbuild": "mkdir -p dist/angular-project && echo '{\"headers\":{\"/**\":{\"Access-Control-Allow-Origin\":\"*\"}},\"redirects\":[{\"source\":\"/*\",\"destination\":\"/index.html\",\"type\":200}]}' > dist/angular-project/static.json",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:AngularProject": "node dist/angular-project/server/server.mjs"
